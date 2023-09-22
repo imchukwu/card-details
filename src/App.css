@@ -1,0 +1,501 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.error{
+  border-color: rgba(255, 80, 80, 1);
+  color: rgba(255, 80, 80, 1);
+  position:sticky;
+}
+p.error{
+  font-size: 12px;
+  width:max-content;
+
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Space Grotesk";
+}
+.page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 349px;
+}
+.left{
+  flex: 1;
+  display:flex;
+  flex-direction: row-reverse;
+}
+.left .bgimg{
+  width: 100%;
+  height: 100vh;
+}
+.credit{
+  position:absolute;
+  left: 15%;
+  top:10%;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.credit .back{
+  width:447px ;
+  height: 245px;
+}
+.card-back{
+  position: relative;
+  top:-165px;
+  left:370px;
+}
+.credit .front{
+
+  position: relative;
+  left: -20%;
+}
+.card-content{
+  width:447px ;
+  height: 245px;
+  position: relative;
+  background-image: url('./images/bg-card-front.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 65px;
+  padding: 28px 32px;
+  font-family: "Space Grotesk";
+
+}
+.card-content img{
+  width:84px;
+  height:47px;
+}
+.card-content .card-details{
+display: flex;
+flex-direction: column;
+width: inherit;
+gap:25.5px;
+justify-content: flex-start;
+}
+.card-content .card-details h1{
+  font-size: 28px;
+  margin-left: -40px;
+  letter-spacing: 3.42px;
+  font-weight: 500;
+  line-height: 35.73px;
+  font-family: "Space Grotesk";
+  color: white;
+  text-align: center;
+}
+.card-content .card-details .details{
+  display: flex;
+  margin-left: -45px;
+  text-transform: uppercase;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  gap:110px;
+  font-size: 14px;
+}
+.right{
+  flex:2;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  display:flex;
+  width: 381px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Space Grotesk";
+  gap: 15px;
+  justify-content: center;
+}
+.form-item{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Space Grotesk";
+  gap: 9px;
+  justify-content: center;
+}
+label{
+  font-size: 12px;
+  line-height: 15.31px;
+  font-weight: 500;
+  color:#21092F;
+  text-transform: uppercase;
+}
+.date-cvc{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+}
+.form-item div{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+ .form-item input{
+  font-family: "Space Grotesk";
+  width:381px;
+  padding: 10px;
+  color: hsl(278, 68%, 11%);
+  height:45px;
+  border:1px solid #DFDEE0;
+  border-radius: 5px;
+}
+
+.date input{
+ width: 80px;
+ font-family: "Space Grotesk";
+ height: 45px;
+ color: hsl(278, 68%, 11%);
+border-radius: 5px;
+ padding: 10px;
+
+ border:1px solid #DFDEE0;
+ border-radius: 5px;
+}
+.dates{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+}
+.cvc input{
+  width: 191px;
+  border:1px solid #DFDEE0;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Space Grotesk";
+  height: 45px;
+  color: hsl(278, 68%, 11%);
+
+}
+input::placeholder{
+  color:hsl(279, 6%, 55%);
+}
+button{
+  width: 381px;
+  height: 53px;
+  border: none;
+  border-radius: 5px;
+  outline:none;
+  font-family: "Space Grotesk";
+  font-size:18px;
+  background-color: rgba(33, 9, 47, 1);
+  color:white;
+}
+@media  (max-width:912px){
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    font-family: "Space Grotesk";
+    overflow-y:scroll;
+    justify-content: center;
+    gap: 0px;
+  }
+  .page{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 60vw;
+  }
+  .left{
+    flex: 1;
+    height: 20vh;
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .left .bgimg{
+    width: 100vw;
+    height: 20vh;
+  }
+  .credit{
+    position:absolute;
+    left: 20%;
+    top:0%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0px;
+  }
+  .credit .back{
+    width:286px ;
+    height: 157px;
+  }
+  .credit .front{
+    position: relative;
+    left: -10%;
+    top: -50px;
+  }
+  .card-content{
+    width:286px ;
+    height: 157px;
+    position: absolute;
+    background-image: url('./images/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:286px 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 20px;
+    font-family: "Space Grotesk";
+  
+  }
+  .card-back{
+    position: absolute;
+    top:65px;
+    left:225px;
+  }
+  .card-content img{
+    width: 54px;
+    height:30px;
+  }
+  .card-content .card-details{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  gap:17px;
+  justify-content: flex-start;
+  }
+  .card-content .card-details h1{
+    font-size: 18px;
+    margin-left: -40px;
+    letter-spacing: 3.42px;
+    font-weight: 500;
+    line-height: 35.73px;
+    font-family: "Space Grotesk";
+    color: white;
+    text-align: center;
+  }
+  .card-content .card-details .details{
+    display: flex;
+    margin-left: -45px;
+    text-transform: uppercase;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    gap:80px;
+    font-size: 9px;
+  }
+  .right{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  form{
+    display:flex;
+    width: 327px;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Space Grotesk";
+    gap: 26px;
+    justify-content: center;
+  }
+  .form-item{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Space Grotesk";
+    gap: 9px;
+    justify-content: center;
+  }
+  label{
+    font-size: 12px;
+    line-height: 15.31px;
+    font-weight: 500;
+    color:#21092F;
+    text-transform: uppercase;
+  }
+  .date-cvc{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+  }
+  .form-item div{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+   .form-item input{
+    font-family: "Space Grotesk";
+    width:90vw;
+    padding: 10px;
+    color: hsl(278, 68%, 11%);
+    height:45px;
+    border:1px solid #DFDEE0;
+    border-radius: 5px;
+  }
+  
+  .date input{
+   width: 10vw;
+   font-family: "Space Grotesk";
+   height: 45px;
+   color: hsl(278, 68%, 11%);
+  border-radius: 5px;
+   padding: 10px;
+  
+   border:1px solid #DFDEE0;
+   border-radius: 5px;
+  }
+  .dates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+  }
+  .cvc{
+    display: flex;
+    flex-direction: column;
+  }
+  .cvc input{
+    width:30vw;
+    border:1px solid #DFDEE0;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Space Grotesk";
+    height: 45px;
+    color: hsl(278, 68%, 11%);
+  
+  }
+  input::placeholder{
+    color:hsl(279, 6%, 55%);
+  }
+  button{
+    width:327px;
+    height: 53px;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    font-family: "Space Grotesk";
+    font-size:18px;
+    background-color: rgba(33, 9, 47, 1);
+    color:white;
+  }
+}
+@media (min-width:436px)and (max-width:912px){
+  .credit{
+    position:absolute;
+    left: 35%;
+    top:5%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0px;
+  }
+  .form-item input{
+    font-family: "Space Grotesk";
+    width:327px;
+    padding: 10px;
+    color: hsl(278, 68%, 11%);
+    height:45px;
+    border:1px solid #DFDEE0;
+    border-radius: 5px;
+  }
+  .date input{
+    width: 72px;
+        font-family: "Space Grotesk";
+    height: 45px;
+    color: hsl(278, 68%, 11%);
+   border-radius: 5px;
+    padding: 10px;
+   
+    border:1px solid #DFDEE0;
+    border-radius: 5px;
+   }
+   .dates{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap:10px;
+   }
+   .cvc{
+     display: flex;
+     flex-direction: column;
+   }
+   .cvc input{
+     width:30vw;
+     width: 164px;
+     border:1px solid #DFDEE0;
+     border-radius: 5px;
+     padding: 10px;
+     font-family: "Space Grotesk";
+     height: 45px;
+     color: hsl(278, 68%, 11%);
+   
+   }
+}
+@media(max-width:360px){
+  .credit{
+    position:absolute;
+    left: 10%;
+    top:2%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0px;
+  }
+
+.date input{
+  width: 20vw;
+      font-family: "Space Grotesk";
+  height: 45px;
+  color: hsl(278, 68%, 11%);
+ border-radius: 5px;
+  padding: 10px;
+ 
+  border:1px solid #DFDEE0;
+  border-radius: 5px;
+ }
+ .dates{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap:10px;
+ }
+ .cvc{
+   display: flex;
+   flex-direction: column;
+ }
+ .cvc input{
+   width:30vw;
+   width: 164px;
+   border:1px solid #DFDEE0;
+   border-radius: 5px;
+   padding: 10px;
+   font-family: "Space Grotesk";
+   height: 45px;
+   color: hsl(278, 68%, 11%);
+ 
+ }
+ button{
+  width:90vw;
+ 
+}
+}
